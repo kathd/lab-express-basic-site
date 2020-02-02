@@ -1,0 +1,18 @@
+<html class="gallery-page">
+<div class="gallery-container">
+    <h1>Destinations</h1>
+    <div class="destinations-container">
+        {{#each destinations}}
+        <div class="each-container">
+            <img class="img-destination" src="{{this.image}}" alt="{{this.place}}">
+            <div class="overlay">
+                <span class="text">
+                    <h4>{{this.place}}</h4>
+                </span>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+</html>
